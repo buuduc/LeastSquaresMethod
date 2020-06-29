@@ -1,4 +1,4 @@
-function tuyentinh(X,Y)
+function bac1(X,Y)
 i1=length(X); 
 i2=sum(X);
 j1=sum(X);
@@ -13,6 +13,7 @@ B=round(ketqua(2),4)
 figure % goi cua so ra de ve
 plot(X,Y,'.','markersize',20)
 hold on
+X=sort(X); % sap xep lai mang X tu be den lon de ve do thi
 plot(X,A+B*X)
 syms x
 y=A+B*x;
